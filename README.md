@@ -1,5 +1,6 @@
 # CG.Validations: 
 ---
+[![Build Status](https://dev.azure.com/codegator/CG.Validations/_apis/build/status/CodeGator.CG.Validations?branchName=master)](https://dev.azure.com/codegator/CG.Validations/_build/latest?definitionId=1&branchName=master)
 
 #### What does it do?
 The package contains parameter validations used by other CodeGator packages.
