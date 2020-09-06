@@ -1,0 +1,79 @@
+trigger:
+- master
+- rel/*
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  BuildConfiguration: 'Release'
+  SolutionPath: 'src/CG.Validations'
+
+steps:
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet restore'
+  inputs:
+    command: 'restore'
+    nugetConfigPath: 'nuget.config'
+    feedsToUse: config
+    arguments: '--interactive'
+    projects: '$(SolutionPath).sln'
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet build'
+  inputs:
+    command: 'build'
+    arguments: '--configuration $(BuildConfiguration)'
+    projects: '$(SolutionPath).sln'
+    
+- task: DotNetCoreCLI@2
+  displayName: "dotnet test"
+  inputs:
+    command: 'test'
+    projects: '$(SolutionPath).sln'
+    arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
+    publishTestResults: true
+    nobuild: true
+
+- task: PublishCodeCoverageResults@1
+  displayName: "publish coverage"
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: 'src/**/coverage.cobertura.xml'
+    pathToSources: '$(SolutionPath)'
+
+- task: DotNetCoreCLI@2
+  displayName: "dotnet pack"
+  inputs:
+    command: 'pack'
+    arguments: '--configuration $(BuildConfiguration)'    
+    packagesToPack: '$(SolutionPath).sln'
+    nobuild: true
+    versioningScheme: 'off'    
+
+- task: NuGetCommand@2
+  displayName: 'nuget push'
+  inputs:
+    command: 'push'
+    feedsToUse: 'select'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'bobbygogs'
+    versioningScheme: 'off'
+    allowPackageConflicts: true    
+    
+- powershell: |
+    choco install docfx -y
+    if ($lastexitcode -ne 0) {
+      throw ("Error installing docfx")
+    }
+  displayName: "Install docfx"
+
+- powershell: |
+    docfx docfx/docfx.json
+    if ($lastexitcode -ne 0) {
+      throw ("Error generating document")
+    }
+  displayName: "Generate docs"
+
