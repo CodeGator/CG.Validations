@@ -1,8 +1,9 @@
 # CG.Validations: 
 ---
 [![Build Status](https://dev.azure.com/codegator/CG.Validations/_apis/build/status/CodeGator.CG.Validations?branchName=master)](https://dev.azure.com/codegator/CG.Validations/_build/latest?definitionId=1&branchName=master)
-
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Validations/)
+[![NuGet downloads](https://img.shields.io/nuget/dt/CG.Validations.svg?style=flat)](https://nuget.org/packages/CG.Validations)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Validations/1)
 
 #### What does it do?
 The package contains parameter validations used by other CodeGator packages.
@@ -19,4 +20,5 @@ PM> Install-Package CG.Validations
 #### How do I contact you?
 If you've spotted a bug in the code please use the project Issues [HERE](https://github.com/CodeGator/CG.Validations/issues)
 
-
+#### Should I use this package in my project?
+This codebase changes, often, so it may not be the best choice for a production project. 
