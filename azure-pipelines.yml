@@ -17,7 +17,7 @@ steps:
       throw ("Error installing docfx")
     }
   displayName: "Install docfx"
-  
+
 - powershell: |
     docfx docfx/docfx.json
     if ($lastexitcode -ne 0) {
@@ -34,7 +34,7 @@ steps:
     git clone https://github.com/CodeGator/CG.Validations.git -b gh-pages origin_site -q
     Copy-Item origin_site/.git _site -recurse
     CD _site
-    git add --ignore-errors -A 2>&1
+    git add -F -A 2>&1
     #git commit -m "CI Updates" -q
     #git push origin gh-pages -q
   displayName: "Publish docs"  
