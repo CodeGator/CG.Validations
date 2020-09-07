@@ -32,11 +32,11 @@ references:
   commentId: T:CG.Validations.GuardExtensions
   fullName: CG.Validations.GuardExtensions
   nameWithType: GuardExtensions
-- uid: CG.Validations.GuardExtensions.ThrowIfEmptyGuid(CG.Validations.IGuard,Guid,System.String,System.String,System.String,System.Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfEmptyGuid(CG.Validations.IGuard,System.Guid,System.String,System.String,System.String,System.Int32)
   name: ThrowIfEmptyGuid(IGuard, Guid, String, String, String, Int32)
-  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32_
-  commentId: M:CG.Validations.GuardExtensions.ThrowIfEmptyGuid(CG.Validations.IGuard,Guid,System.String,System.String,System.String,System.Int32)
-  fullName: CG.Validations.GuardExtensions.ThrowIfEmptyGuid(CG.Validations.IGuard, Guid, System.String, System.String, System.String, System.Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfEmptyGuid_CG_Validations_IGuard_System_Guid_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfEmptyGuid(CG.Validations.IGuard,System.Guid,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfEmptyGuid(CG.Validations.IGuard, System.Guid, System.String, System.String, System.String, System.Int32)
   nameWithType: GuardExtensions.ThrowIfEmptyGuid(IGuard, Guid, String, String, String, Int32)
 - uid: CG.Validations.GuardExtensions.ThrowIfEmptyGuid*
   name: ThrowIfEmptyGuid
@@ -70,11 +70,11 @@ references:
   commentId: M:CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,System.Int64,System.Int64,System.String,System.String,System.String,System.Int32)
   fullName: CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard, System.Int64, System.Int64, System.String, System.String, System.String, System.Int32)
   nameWithType: GuardExtensions.ThrowIfGreaterThan(IGuard, Int64, Int64, String, String, String, Int32)
-- uid: CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,TimeSpan,TimeSpan,System.String,System.String,System.String,System.Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,System.TimeSpan,System.TimeSpan,System.String,System.String,System.String,System.Int32)
   name: ThrowIfGreaterThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)
-  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32_
-  commentId: M:CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,TimeSpan,TimeSpan,System.String,System.String,System.String,System.Int32)
-  fullName: CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard, TimeSpan, TimeSpan, System.String, System.String, System.String, System.Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_TimeSpan_System_TimeSpan_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,System.TimeSpan,System.TimeSpan,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard, System.TimeSpan, System.TimeSpan, System.String, System.String, System.String, System.Int32)
   nameWithType: GuardExtensions.ThrowIfGreaterThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)
 - uid: CG.Validations.GuardExtensions.ThrowIfGreaterThan*
   name: ThrowIfGreaterThan
@@ -83,11 +83,11 @@ references:
   isSpec: "True"
   fullName: CG.Validations.GuardExtensions.ThrowIfGreaterThan
   nameWithType: GuardExtensions.ThrowIfGreaterThan
-- uid: CG.Validations.GuardExtensions.ThrowIfInvalidDateTime(CG.Validations.IGuard,DateTime,System.String,System.String,System.String,System.Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfInvalidDateTime(CG.Validations.IGuard,System.DateTime,System.String,System.String,System.String,System.Int32)
   name: ThrowIfInvalidDateTime(IGuard, DateTime, String, String, String, Int32)
-  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_CG_Validations_IGuard_DateTime_System_String_System_String_System_String_System_Int32_
-  commentId: M:CG.Validations.GuardExtensions.ThrowIfInvalidDateTime(CG.Validations.IGuard,DateTime,System.String,System.String,System.String,System.Int32)
-  fullName: CG.Validations.GuardExtensions.ThrowIfInvalidDateTime(CG.Validations.IGuard, DateTime, System.String, System.String, System.String, System.Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_CG_Validations_IGuard_System_DateTime_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfInvalidDateTime(CG.Validations.IGuard,System.DateTime,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfInvalidDateTime(CG.Validations.IGuard, System.DateTime, System.String, System.String, System.String, System.Int32)
   nameWithType: GuardExtensions.ThrowIfInvalidDateTime(IGuard, DateTime, String, String, String, Int32)
 - uid: CG.Validations.GuardExtensions.ThrowIfInvalidDateTime*
   name: ThrowIfInvalidDateTime
@@ -108,11 +108,11 @@ references:
   commentId: M:CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,System.Int64,System.Int64,System.String,System.String,System.String,System.Int32)
   fullName: CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard, System.Int64, System.Int64, System.String, System.String, System.String, System.Int32)
   nameWithType: GuardExtensions.ThrowIfLessThan(IGuard, Int64, Int64, String, String, String, Int32)
-- uid: CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,TimeSpan,TimeSpan,System.String,System.String,System.String,System.Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,System.TimeSpan,System.TimeSpan,System.String,System.String,System.String,System.Int32)
   name: ThrowIfLessThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)
-  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32_
-  commentId: M:CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,TimeSpan,TimeSpan,System.String,System.String,System.String,System.Int32)
-  fullName: CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard, TimeSpan, TimeSpan, System.String, System.String, System.String, System.Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_TimeSpan_System_TimeSpan_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,System.TimeSpan,System.TimeSpan,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard, System.TimeSpan, System.TimeSpan, System.String, System.String, System.String, System.Int32)
   nameWithType: GuardExtensions.ThrowIfLessThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)
 - uid: CG.Validations.GuardExtensions.ThrowIfLessThan*
   name: ThrowIfLessThan
@@ -133,11 +133,11 @@ references:
   commentId: M:CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,System.Int64,System.String,System.String,System.String,System.Int32)
   fullName: CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard, System.Int64, System.String, System.String, System.String, System.Int32)
   nameWithType: GuardExtensions.ThrowIfLessThanOrEqualZero(IGuard, Int64, String, String, String, Int32)
-- uid: CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,TimeSpan,System.String,System.String,System.String,System.Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,System.TimeSpan,System.String,System.String,System.String,System.Int32)
   name: ThrowIfLessThanOrEqualZero(IGuard, TimeSpan, String, String, String, Int32)
-  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32_
-  commentId: M:CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,TimeSpan,System.String,System.String,System.String,System.Int32)
-  fullName: CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard, TimeSpan, System.String, System.String, System.String, System.Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_TimeSpan_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,System.TimeSpan,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard, System.TimeSpan, System.String, System.String, System.String, System.Int32)
   nameWithType: GuardExtensions.ThrowIfLessThanOrEqualZero(IGuard, TimeSpan, String, String, String, Int32)
 - uid: CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero*
   name: ThrowIfLessThanOrEqualZero
@@ -178,11 +178,11 @@ references:
   isSpec: "True"
   fullName: CG.Validations.GuardExtensions.ThrowIfMalformedUri
   nameWithType: GuardExtensions.ThrowIfMalformedUri
-- uid: CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid(CG.Validations.IGuard,Guid,System.String,System.String,System.String,System.Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid(CG.Validations.IGuard,System.Guid,System.String,System.String,System.String,System.Int32)
   name: ThrowIfNotEmptyGuid(IGuard, Guid, String, String, String, Int32)
-  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32_
-  commentId: M:CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid(CG.Validations.IGuard,Guid,System.String,System.String,System.String,System.Int32)
-  fullName: CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid(CG.Validations.IGuard, Guid, System.String, System.String, System.String, System.Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_CG_Validations_IGuard_System_Guid_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid(CG.Validations.IGuard,System.Guid,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid(CG.Validations.IGuard, System.Guid, System.String, System.String, System.String, System.Int32)
   nameWithType: GuardExtensions.ThrowIfNotEmptyGuid(IGuard, Guid, String, String, String, Int32)
 - uid: CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid*
   name: ThrowIfNotEmptyGuid
@@ -274,11 +274,11 @@ references:
   commentId: M:CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,System.Int64,System.String,System.String,System.String,System.Int32)
   fullName: CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard, System.Int64, System.String, System.String, System.String, System.Int32)
   nameWithType: GuardExtensions.ThrowIfZero(IGuard, Int64, String, String, String, Int32)
-- uid: CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,TimeSpan,System.String,System.String,System.String,System.Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,System.TimeSpan,System.String,System.String,System.String,System.Int32)
   name: ThrowIfZero(IGuard, TimeSpan, String, String, String, Int32)
-  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32_
-  commentId: M:CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,TimeSpan,System.String,System.String,System.String,System.Int32)
-  fullName: CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard, TimeSpan, System.String, System.String, System.String, System.Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_TimeSpan_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,System.TimeSpan,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard, System.TimeSpan, System.String, System.String, System.String, System.Int32)
   nameWithType: GuardExtensions.ThrowIfZero(IGuard, TimeSpan, String, String, String, Int32)
 - uid: CG.Validations.GuardExtensions.ThrowIfZero*
   name: ThrowIfZero

@@ -92,16 +92,40 @@ type.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">GuardExtensions</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CG.Validations.html">CG.Validations</a></h6>
   <h6><strong>Assembly</strong>: CG.Validations.dll</h6>
   <h5 id="CG_Validations_GuardExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class GuardExtensions : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class GuardExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="CG_Validations_GuardExtensions_ThrowIfEmptyGuid_" data-uid="CG.Validations.GuardExtensions.ThrowIfEmptyGuid*"></a>
-  <h4 id="CG_Validations_GuardExtensions_ThrowIfEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfEmptyGuid(CG.Validations.IGuard,Guid,System.String,System.String,System.String,System.Int32)">ThrowIfEmptyGuid(IGuard, Guid, String, String, String, Int32)</h4>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfEmptyGuid_CG_Validations_IGuard_System_Guid_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfEmptyGuid(CG.Validations.IGuard,System.Guid,System.String,System.String,System.String,System.Int32)">ThrowIfEmptyGuid(IGuard, Guid, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
 argument contains an empty GUID instance.</p>
 </div>
@@ -127,7 +151,7 @@ argument contains an empty GUID instance.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">argValue</span></td>
         <td><p>The argument to test.</p>
 </td>
@@ -174,8 +198,8 @@ argument contains an empty GUID instance.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="CG_Validations_GuardExtensions_ThrowIfEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
-  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32_">ThrowIfEmptyGuid(IGuard, Guid, String, String, String, Int32)</a>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfEmptyGuid_CG_Validations_IGuard_System_Guid_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfEmptyGuid_CG_Validations_IGuard_System_Guid_System_String_System_String_System_String_System_Int32_">ThrowIfEmptyGuid(IGuard, Guid, String, String, String, Int32)</a>
 method.</p>
 <pre><code>class TestClass
 {
@@ -189,6 +213,23 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains an empty GUID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfFalse_" data-uid="CG.Validations.GuardExtensions.ThrowIfFalse*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfFalse_CG_Validations_IGuard_System_Boolean_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfFalse(CG.Validations.IGuard,System.Boolean,System.String,System.String,System.String,System.Int32)">ThrowIfFalse(IGuard, Boolean, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -278,6 +319,23 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a FALSE value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_Int32_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,System.Int32,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfGreaterThan(IGuard, Int32, Int32, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -376,6 +434,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+greater than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_Int64_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,System.Int64,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfGreaterThan(IGuard, Int64, Int64, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -474,8 +550,26 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+greater than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan*"></a>
-  <h4 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,TimeSpan,TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfGreaterThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</h4>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_TimeSpan_System_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,System.TimeSpan,System.TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfGreaterThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
 argument is greater than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
 </div>
@@ -501,13 +595,13 @@ argument is greater than the <code data-dev-comment-type="paramref" class="param
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">argValue</span></td>
         <td><p>The argument to be validated.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">amount</span></td>
         <td><p>The amount to be used for validation.</p>
 </td>
@@ -554,8 +648,8 @@ argument is greater than the <code data-dev-comment-type="paramref" class="param
       </tr>
     </tbody>
   </table>
-  <h5 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
-  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfGreaterThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</a>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_TimeSpan_System_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_TimeSpan_System_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfGreaterThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</a>
 method.</p>
 <pre><code>class TestClass
 {
@@ -572,8 +666,26 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+greater than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_" data-uid="CG.Validations.GuardExtensions.ThrowIfInvalidDateTime*"></a>
-  <h4 id="CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_CG_Validations_IGuard_DateTime_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfInvalidDateTime(CG.Validations.IGuard,DateTime,System.String,System.String,System.String,System.Int32)">ThrowIfInvalidDateTime(IGuard, DateTime, String, String, String, Int32)</h4>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_CG_Validations_IGuard_System_DateTime_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfInvalidDateTime(CG.Validations.IGuard,System.DateTime,System.String,System.String,System.String,System.Int32)">ThrowIfInvalidDateTime(IGuard, DateTime, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
 argument contains an invalid DateTime value.</p>
 </div>
@@ -599,7 +711,7 @@ argument contains an invalid DateTime value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DateTime</span></td>
+        <td><span class="xref">System.DateTime</span></td>
         <td><span class="parametername">argValue</span></td>
         <td><p>The argument to test.</p>
 </td>
@@ -646,8 +758,8 @@ argument contains an invalid DateTime value.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_CG_Validations_IGuard_DateTime_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
-  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_CG_Validations_IGuard_DateTime_System_String_System_String_System_String_System_Int32_">ThrowIfInvalidDateTime(IGuard, DateTime, String, String, String, Int32)</a>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_CG_Validations_IGuard_System_DateTime_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_CG_Validations_IGuard_System_DateTime_System_String_System_String_System_String_System_Int32_">ThrowIfInvalidDateTime(IGuard, DateTime, String, String, String, Int32)</a>
 method.</p>
 <pre><code>class TestClass
 {
@@ -661,6 +773,23 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains an invalid value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfLessThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_Int32_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,System.Int32,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfLessThan(IGuard, Int32, Int32, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -759,6 +888,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+less than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfLessThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_Int64_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,System.Int64,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfLessThan(IGuard, Int64, Int64, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -857,8 +1004,26 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+less than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfLessThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan*"></a>
-  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,TimeSpan,TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfLessThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</h4>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_TimeSpan_System_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,System.TimeSpan,System.TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfLessThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
 argument is less than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
 </div>
@@ -884,13 +1049,13 @@ argument is less than the <code data-dev-comment-type="paramref" class="paramref
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">argValue</span></td>
         <td><p>The argument to be validated.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">amount</span></td>
         <td><p>The amount to be used for validation.</p>
 </td>
@@ -937,8 +1102,8 @@ argument is less than the <code data-dev-comment-type="paramref" class="paramref
       </tr>
     </tbody>
   </table>
-  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
-  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfLessThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</a>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_TimeSpan_System_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_TimeSpan_System_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfLessThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</a>
 method.</p>
 <pre><code>class TestClass
 {
@@ -955,6 +1120,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+less than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfLessThanOrEqualZero(IGuard, Int32, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -1044,6 +1227,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+less than or equal to zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfLessThanOrEqualZero(IGuard, Int64, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the '<code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -1133,9 +1334,27 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+less than or equal to zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero*"></a>
-  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfLessThanOrEqualZero(IGuard, TimeSpan, String, String, String, Int32)</h4>
-  <div class="markdown level1 summary"><p>This method throws an <see cref="!:ArgumentException"></see> if the value
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,System.TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfLessThanOrEqualZero(IGuard, TimeSpan, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an <span class="xref">System.ArgumentException</span> if the value
 of the <code data-dev-comment-type="paramref" class="paramref">argValue</code> parameter has a value less than
 or equal to zero.</p>
 </div>
@@ -1161,7 +1380,7 @@ or equal to zero.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">argValue</span></td>
         <td><p>The argument to test.</p>
 </td>
@@ -1208,8 +1427,8 @@ or equal to zero.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
-  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfLessThanOrEqualZero(IGuard, TimeSpan, String, String, String, Int32)</a>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfLessThanOrEqualZero(IGuard, TimeSpan, String, String, String, Int32)</a>
 method.</p>
 <pre><code>class TestClass
 {
@@ -1223,6 +1442,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+less than, or equal to zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfLessThanZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanZero*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThanZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanZero(CG.Validations.IGuard,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfLessThanZero(IGuard, Int32, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -1312,6 +1549,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfLessThanZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanZero*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThanZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanZero(CG.Validations.IGuard,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfLessThanZero(IGuard, Int64, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -1401,6 +1656,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfMalformedUri_" data-uid="CG.Validations.GuardExtensions.ThrowIfMalformedUri*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfMalformedUri_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfMalformedUri(CG.Validations.IGuard,System.String,System.String,System.String,System.String,System.Int32)">ThrowIfMalformedUri(IGuard, String, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the &quot;argValue&quot; argument
@@ -1490,8 +1763,25 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a malformed uri.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid*"></a>
-  <h4 id="CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid(CG.Validations.IGuard,Guid,System.String,System.String,System.String,System.Int32)">ThrowIfNotEmptyGuid(IGuard, Guid, String, String, String, Int32)</h4>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_CG_Validations_IGuard_System_Guid_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid(CG.Validations.IGuard,System.Guid,System.String,System.String,System.String,System.Int32)">ThrowIfNotEmptyGuid(IGuard, Guid, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
 argument does not contain an empty GUID instance.</p>
 </div>
@@ -1517,7 +1807,7 @@ argument does not contain an empty GUID instance.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><span class="parametername">argValue</span></td>
         <td><p>The argument to test.</p>
 </td>
@@ -1564,8 +1854,8 @@ argument does not contain an empty GUID instance.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
-  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32_">ThrowIfNotEmptyGuid(IGuard, Guid, String, String, String, Int32)</a>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_CG_Validations_IGuard_System_Guid_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_CG_Validations_IGuard_System_Guid_System_String_System_String_System_String_System_Int32_">ThrowIfNotEmptyGuid(IGuard, Guid, String, String, String, Int32)</a>
 method.</p>
 <pre><code>class TestClass
 {
@@ -1579,6 +1869,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument does not contain an
+empty GUID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfNotNullOrEmpty_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotNullOrEmpty*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfNotNullOrEmpty_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotNullOrEmpty(CG.Validations.IGuard,System.String,System.String,System.String,System.String,System.Int32)">ThrowIfNotNullOrEmpty(IGuard, String, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -1668,6 +1976,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument does not contain an empty
+or null string value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfNotZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotZero*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfNotZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotZero(CG.Validations.IGuard,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfNotZero(IGuard, Int32, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -1757,6 +2083,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+something other than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfNotZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotZero*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfNotZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotZero(CG.Validations.IGuard,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfNotZero(IGuard, Int64, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -1846,6 +2190,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+something other than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfNull_" data-uid="CG.Validations.GuardExtensions.ThrowIfNull*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfNull_CG_Validations_IGuard_System_Object_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNull(CG.Validations.IGuard,System.Object,System.String,System.String,System.String,System.Int32)">ThrowIfNull(IGuard, Object, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -1920,6 +2282,23 @@ argument contains a null reference.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a null value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfNullOrEmpty_" data-uid="CG.Validations.GuardExtensions.ThrowIfNullOrEmpty*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfNullOrEmpty_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNullOrEmpty(CG.Validations.IGuard,System.String,System.String,System.String,System.String,System.Int32)">ThrowIfNullOrEmpty(IGuard, String, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -1990,6 +2369,24 @@ argument contains a null reference or an empty string.</p>
       <tr>
         <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
         <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains an empty or null
+string value.</p>
 </td>
       </tr>
     </tbody>
@@ -2083,6 +2480,23 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a FALSE value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfZero(IGuard, Int32, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -2172,6 +2586,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfZero(IGuard, Int64, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
@@ -2261,8 +2693,26 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains a value that is
+zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero*"></a>
-  <h4 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfZero(IGuard, TimeSpan, String, String, String, Int32)</h4>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,System.TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfZero(IGuard, TimeSpan, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
 argument contains an empty time span value.</p>
 </div>
@@ -2288,7 +2738,7 @@ argument contains an empty time span value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">argValue</span></td>
         <td><p>The argument to test.</p>
 </td>
@@ -2335,8 +2785,8 @@ argument contains an empty time span value.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
-  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfZero(IGuard, TimeSpan, String, String, String, Int32)</a>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfZero(IGuard, TimeSpan, String, String, String, Int32)</a>
 method.</p>
 <pre><code>class TestClass
 {
@@ -2350,6 +2800,24 @@ method.</p>
     }
 }</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument contains an empty time
+span value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
