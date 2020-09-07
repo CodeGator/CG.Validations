@@ -11,7 +11,13 @@ variables:
 
 steps:
 
-
+- powershell: |
+    choco install docfx -y
+    if ($lastexitcode -ne 0) {
+      throw ("Error installing docfx")
+    }
+  displayName: "Install docfx"
+  
 - powershell: |
     docfx docfx/docfx.json
     if ($lastexitcode -ne 0) {
@@ -86,12 +92,7 @@ steps:
     versioningScheme: 'off'
     allowPackageConflicts: true    
     
-- powershell: |
-    choco install docfx -y
-    if ($lastexitcode -ne 0) {
-      throw ("Error installing docfx")
-    }
-  displayName: "Install docfx"
+
 
 
   
