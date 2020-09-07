@@ -89,6 +89,9 @@ steps:
     git add -A 2>&1
     git commit -m "CI Updates" -q
     git push origin gh-pages -q
+    if ($lastexitcode -ne 0) {
+      throw ("Error pushing docs")
+    }
   displayName: "Publish docs"  
   
 
