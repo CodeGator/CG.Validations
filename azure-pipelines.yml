@@ -7,7 +7,8 @@ pool:
 
 variables:
   BuildConfiguration: 'Release'
-  SolutionPath: 'src/CG.Validations'
+  SolutionName: CG.Validations
+  SolutionPath: 'src/$(SolutionName)'
 
 steps:
 - task: DotNetCoreCLI@2
@@ -52,7 +53,7 @@ steps:
     versioningScheme: 'off'    
 
 - task: NuGetCommand@2
-  displayName: 'nuget push'
+  displayName: 'nuget internal push'
   inputs:
     command: 'push'
     feedsToUse: 'select'
@@ -62,6 +63,14 @@ steps:
     versioningScheme: 'off'
     allowPackageConflicts: true    
     
+- task: NuGetCommand@2
+  displayName: 'nuget external push'
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+    nuGetFeedType: 'external'
+    publishFeedCredentials: 'NUGET.ORG'
+    verbosityPush: 'Quiet'
 
 - powershell: |
     choco install docfx -y
@@ -84,7 +93,7 @@ steps:
     git config --global user.email $(OP_USER_EMAIL)
     git config --global user.name $(OP_USER)
 
-    git clone https://github.com/CodeGator/CG.Validations.git -b gh-pages origin_site -q
+    git clone https://github.com/CodeGator/$(SolutionName).git -b gh-pages origin_site -q
     Copy-Item origin_site/.git _site -recurse
     CD _site
     git commit -a -m "CI Updates" -q
