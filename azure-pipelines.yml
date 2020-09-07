@@ -36,7 +36,7 @@ steps:
     Copy-Item origin_site/.git _site -recurse
     CD _site
     #git add -all 2>&1
-    git commit -m "CI Updates" -q
+    git commit -a -m "CI Updates" -q
     git push origin gh-pages -q
   displayName: "Publish docs"  
 
