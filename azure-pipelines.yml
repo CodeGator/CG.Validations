@@ -35,7 +35,6 @@ steps:
     Copy-Item origin_site/.git _site -recurse
     CD _site
     git add . -A 2>&1
-    if ($lastexitcode -lt 8) { $global:lastexitcode = 0 }
     git commit -m "CI Updates" -q
     git push origin gh-pages -q
   displayName: "Publish docs"  
