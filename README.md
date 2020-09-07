@@ -4,6 +4,8 @@
 
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Validations/)
 
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Validations/1)
+
 #### What does it do?
 The package contains parameter validations used by other CodeGator packages.
 
