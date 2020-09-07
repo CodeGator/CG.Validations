@@ -79,9 +79,9 @@ steps:
 
 - powershell: | 
     git config --global credential.helper store
-    Add-Content "$(env:USERPROFILE)\.git-credentials" "https://$($env:GIT_PAT):x-oauth-basic@github.com`n"
-    git config --global user.email $(env:OP_USER_EMAIL)
-    git config --global user.name $(env:OP_USER)
+    Add-Content "$HOME\.git-credentials" "https://$(GIT_PAT):x-oauth-basic@github.com`n"
+    git config --global user.email $(OP_USER_EMAIL)
+    git config --global user.name $(OP_USER)
 
     git clone https://github.com/CodeGator/CG.Validations.git -b gh-pages origin_site -q
     Copy-Item origin_site/.git _site -recurse
