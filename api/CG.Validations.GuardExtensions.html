@@ -1,0 +1,2384 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GuardExtensions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GuardExtensions
+   ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CG.Validations.GuardExtensions">
+  
+  
+  <h1 id="CG_Validations_GuardExtensions" data-uid="CG.Validations.GuardExtensions" class="text-break">Class GuardExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>This class contains extensiom methods related to the <a class="xref" href="CG.Validations.IGuard.html">IGuard</a>
+type.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GuardExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Validations.html">CG.Validations</a></h6>
+  <h6><strong>Assembly</strong>: CG.Validations.dll</h6>
+  <h5 id="CG_Validations_GuardExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GuardExtensions : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="CG_Validations_GuardExtensions_ThrowIfEmptyGuid_" data-uid="CG.Validations.GuardExtensions.ThrowIfEmptyGuid*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfEmptyGuid(CG.Validations.IGuard,Guid,System.String,System.String,System.String,System.Int32)">ThrowIfEmptyGuid(IGuard, Guid, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains an empty GUID instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfEmptyGuid(this IGuard guard, Guid argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32_">ThrowIfEmptyGuid(IGuard, Guid, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = Guid.Empty;
+
+        // throws an exception, since the GUID is empty.
+        Guard.Intance().ThrowIfEmptyGuid(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfFalse_" data-uid="CG.Validations.GuardExtensions.ThrowIfFalse*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfFalse_CG_Validations_IGuard_System_Boolean_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfFalse(CG.Validations.IGuard,System.Boolean,System.String,System.String,System.String,System.Int32)">ThrowIfFalse(IGuard, Boolean, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains a FALSE value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfFalse(this IGuard guard, bool argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfFalse_CG_Validations_IGuard_System_Boolean_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfFalse_CG_Validations_IGuard_System_Boolean_System_String_System_String_System_String_System_Int32_">ThrowIfFalse(IGuard, Boolean, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = false;
+
+        // throws an exception, since the argument is false.
+        Guard.Instance().ThrowIfFalse(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_Int32_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,System.Int32,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfGreaterThan(IGuard, Int32, Int32, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument is greater than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfGreaterThan(this IGuard guard, int argValue, int amount, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to be validated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to be used for validation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_Int32_System_Int32_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_Int32_System_Int32_System_String_System_String_System_String_System_Int32_">ThrowIfGreaterThan(IGuard, Int32, Int32, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = 2;
+
+        // make the value to compare it against.
+        var amount = 1; 
+
+        // throws an exception, since the argument is greater than 1.
+        Guard.Instance().ThrowIfGreaterThan(arg, amount, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_Int64_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,System.Int64,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfGreaterThan(IGuard, Int64, Int64, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument is greater than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfGreaterThan(this IGuard guard, long argValue, long amount, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to be validated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to be used for validation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_Int64_System_Int64_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_System_Int64_System_Int64_System_String_System_String_System_String_System_Int32_">ThrowIfGreaterThan(IGuard, Int64, Int64, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = 2;
+
+        // make the value to compare it against.
+        var amount = 1; 
+
+        // throws an exception, since the argument is greater than 1.
+        Guard.Instance().ThrowIfGreaterThan(arg, amount, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfGreaterThan(CG.Validations.IGuard,TimeSpan,TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfGreaterThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument is greater than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfGreaterThan(this IGuard guard, TimeSpan argValue, TimeSpan amount, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to be validated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to be used for validation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfGreaterThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfGreaterThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = new TimeSpan(1, 1, 1);
+
+        // make the value to compare it against.
+        var amount = new TimeSpan(1, 1, 1); 
+
+        // throws an exception, since the argument is greater than 1.
+        Guard.Instance().ThrowIfGreaterThan(arg, amount, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_" data-uid="CG.Validations.GuardExtensions.ThrowIfInvalidDateTime*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_CG_Validations_IGuard_DateTime_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfInvalidDateTime(CG.Validations.IGuard,DateTime,System.String,System.String,System.String,System.Int32)">ThrowIfInvalidDateTime(IGuard, DateTime, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains an invalid DateTime value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfInvalidDateTime(this IGuard guard, DateTime argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_CG_Validations_IGuard_DateTime_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfInvalidDateTime_CG_Validations_IGuard_DateTime_System_String_System_String_System_String_System_Int32_">ThrowIfInvalidDateTime(IGuard, DateTime, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = new DateTime();
+
+        // throws an exception, since the argument is invalid.
+        Guard.Instance().ThrowIfInvalidDateTime(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfLessThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_Int32_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,System.Int32,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfLessThan(IGuard, Int32, Int32, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument is less than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfLessThan(this IGuard guard, int argValue, int amount, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to be validated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to be used for validation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_Int32_System_Int32_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_Int32_System_Int32_System_String_System_String_System_String_System_Int32_">ThrowIfLessThan(IGuard, Int32, Int32, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = 1;
+
+        // make the value to compare it against.
+        var amount = 2; 
+
+        // throws an exception, since the argument is less than 2.
+        Guard.Instance().ThrowIfLessThan(arg, amount, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfLessThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_Int64_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,System.Int64,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfLessThan(IGuard, Int64, Int64, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument is less than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfLessThan(this IGuard guard, long argValue, long amount, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to be validated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to be used for validation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_Int64_System_Int64_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_System_Int64_System_Int64_System_String_System_String_System_String_System_Int32_">ThrowIfLessThan(IGuard, Int64, Int64, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = 1;
+
+        // make the value to compare it against.
+        var amount = 2; 
+
+        // throws an exception, since the argument is less than 2.
+        Guard.Instance().ThrowIfLessThan(arg, amount, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfLessThan_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThan(CG.Validations.IGuard,TimeSpan,TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfLessThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method will throw an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument is less than the <code data-dev-comment-type="paramref" class="paramref">amount</code> argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfLessThan(this IGuard guard, TimeSpan argValue, TimeSpan amount, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to be validated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to be used for validation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThan_CG_Validations_IGuard_TimeSpan_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfLessThan(IGuard, TimeSpan, TimeSpan, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = new timeSpan(1, 1, 1);
+
+        // make the value to compare it against.
+        var amount = new TimeSpan(2, 2, 2); 
+
+        // throws an exception, since the argument is less than 2:2:2.
+        Guard.Instance().ThrowIfLessThan(arg, amount, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfLessThanOrEqualZero(IGuard, Int32, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains a value that is less than or equal to zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfLessThanOrEqualZero(this IGuard guard, int argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_">ThrowIfLessThanOrEqualZero(IGuard, Int32, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = 0;
+
+        // throws an exception, since the argument is less than or equal to zero.
+        Guard.Instance().ThrowIfLessThanOrEqualZero(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfLessThanOrEqualZero(IGuard, Int64, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the '<code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains a value that is less than or equal to zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfLessThanOrEqualZero(this IGuard guard, long argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_">ThrowIfLessThanOrEqualZero(IGuard, Int64, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = 0;
+
+        // throws an exception, since the argument is less than or equal to zero.
+        Guard.Instance().ThrowIfLessThanOrEqualZero(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanOrEqualZero(CG.Validations.IGuard,TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfLessThanOrEqualZero(IGuard, TimeSpan, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an <see cref="!:ArgumentException"></see> if the value
+of the <code data-dev-comment-type="paramref" class="paramref">argValue</code> parameter has a value less than
+or equal to zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfLessThanOrEqualZero(this IGuard guard, TimeSpan argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThanOrEqualZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfLessThanOrEqualZero(IGuard, TimeSpan, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = Timespan.Zero;
+
+        // throws an exception, since the argument is less than or equal to zero.
+        Guard.Instance().ThrowIfLessThanOrEqualZero(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfLessThanZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanZero*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThanZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanZero(CG.Validations.IGuard,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfLessThanZero(IGuard, Int32, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains a value that is less than zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfLessThanZero(this IGuard guard, int argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThanZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThanZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_">ThrowIfLessThanZero(IGuard, Int32, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = -1;
+
+        // throws an exception, since the argument is invalid.
+        Guard.Instance().ThrowIfLessThanZero(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfLessThanZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanZero*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfLessThanZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfLessThanZero(CG.Validations.IGuard,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfLessThanZero(IGuard, Int64, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains a value that is less than zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfLessThanZero(this IGuard guard, long argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfLessThanZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfLessThanZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_">ThrowIfLessThanZero(IGuard, Int64, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = -1L;
+
+        // throws an exception, since the argument is invalid.
+        Guard.Instance().ThrowIfLessThanZero(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfMalformedUri_" data-uid="CG.Validations.GuardExtensions.ThrowIfMalformedUri*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfMalformedUri_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfMalformedUri(CG.Validations.IGuard,System.String,System.String,System.String,System.String,System.Int32)">ThrowIfMalformedUri(IGuard, String, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the &quot;argValue&quot; argument
+contains a malformed URI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfMalformedUri(this IGuard guard, string argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfMalformedUri_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfMalformedUri_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32_">ThrowIfMalformedUri(IGuard, String, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = &quot;*&quot;;
+
+        // throws an exception, since the URI is malformed.
+        Guard.Instance().ThrowIfMalformedUri(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid(CG.Validations.IGuard,Guid,System.String,System.String,System.String,System.Int32)">ThrowIfNotEmptyGuid(IGuard, Guid, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument does not contain an empty GUID instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfNotEmptyGuid(this IGuard guard, Guid argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotEmptyGuid_CG_Validations_IGuard_Guid_System_String_System_String_System_String_System_Int32_">ThrowIfNotEmptyGuid(IGuard, Guid, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = Guid.Parse(&quot;some guid value&quot;);
+
+        // throws an exception, since the GUID is not empty.
+        Guard.Instance().ThrowIfNotEmptyGuid(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfNotNullOrEmpty_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotNullOrEmpty*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfNotNullOrEmpty_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotNullOrEmpty(CG.Validations.IGuard,System.String,System.String,System.String,System.String,System.Int32)">ThrowIfNotNullOrEmpty(IGuard, String, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument does not contain a null reference or an empty string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfNotNullOrEmpty(this IGuard guard, string argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfNotNullOrEmpty_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotNullOrEmpty_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32_">ThrowIfNotNullOrEmpty(IGuard, String, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = &quot;testing, 1, 2, 3&quot;;
+
+        // throws an exception, since the string not null or empty.
+        Guard.Instance().ThrowIfNotNullOrEmpty(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfNotZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotZero*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfNotZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotZero(CG.Validations.IGuard,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfNotZero(IGuard, Int32, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains something other than zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfNotZero(this IGuard guard, int argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfNotZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_">ThrowIfNotZero(IGuard, Int32, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = 1;
+
+        // throws an exception, since the argument is not zero.
+        Guard.Instance().ThrowIfNotZero(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfNotZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotZero*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfNotZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotZero(CG.Validations.IGuard,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfNotZero(IGuard, Int64, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains something other than zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfNotZero(this IGuard guard, long argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfNotZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_">ThrowIfZero(IGuard, Int64, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = 1;
+
+        // throws an exception, since the argument is not zero.
+        Guard.Instance().ThrowIfNotZero(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfNull_" data-uid="CG.Validations.GuardExtensions.ThrowIfNull*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfNull_CG_Validations_IGuard_System_Object_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNull(CG.Validations.IGuard,System.Object,System.String,System.String,System.String,System.Int32)">ThrowIfNull(IGuard, Object, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains a null reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfNull(this IGuard guard, object argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard instance to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Validations_GuardExtensions_ThrowIfNullOrEmpty_" data-uid="CG.Validations.GuardExtensions.ThrowIfNullOrEmpty*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfNullOrEmpty_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNullOrEmpty(CG.Validations.IGuard,System.String,System.String,System.String,System.String,System.Int32)">ThrowIfNullOrEmpty(IGuard, String, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains a null reference or an empty string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfNullOrEmpty(this IGuard guard, string argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard instance to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Validations_GuardExtensions_ThrowIfTrue_" data-uid="CG.Validations.GuardExtensions.ThrowIfTrue*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfTrue_CG_Validations_IGuard_System_Boolean_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfTrue(CG.Validations.IGuard,System.Boolean,System.String,System.String,System.String,System.Int32)">ThrowIfTrue(IGuard, Boolean, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains a TRUE value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfTrue(this IGuard guard, bool argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfTrue_CG_Validations_IGuard_System_Boolean_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfTrue_CG_Validations_IGuard_System_Boolean_System_String_System_String_System_String_System_Int32_">ThrowIfTrue(IGuard, Boolean, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = true;
+
+        // throws an exception, since the argument is true.
+        Guard.Instance().ThrowIfTrue(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,System.Int32,System.String,System.String,System.String,System.Int32)">ThrowIfZero(IGuard, Int32, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains a zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfZero(this IGuard guard, int argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_Int32_System_String_System_String_System_String_System_Int32_">ThrowIfZero(IGuard, Int32, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = 0;
+
+        // throws an exception, since the argument is zero.
+        Guard.Instance().ThrowIfZero(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,System.Int64,System.String,System.String,System.String,System.Int32)">ThrowIfZero(IGuard, Int64, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains a zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfZero(this IGuard guard, long argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_System_Int64_System_String_System_String_System_String_System_Int32_">ThrowIfZero(IGuard, Int64, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = 0;
+
+        // throws an exception, since the argument is zero.
+        Guard.Instance().ThrowIfZero(arg, nameof(arg));
+    }
+}</code></pre>
+
+  <a id="CG_Validations_GuardExtensions_ThrowIfZero_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfZero(CG.Validations.IGuard,TimeSpan,System.String,System.String,System.String,System.Int32)">ThrowIfZero(IGuard, TimeSpan, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument contains an empty time span value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfZero(this IGuard guard, TimeSpan argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32__examples">Examples</h5>
+  <p>This example shows how to call the <a class="xref" href="CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfZero_CG_Validations_IGuard_TimeSpan_System_String_System_String_System_String_System_Int32_">ThrowIfZero(IGuard, TimeSpan, String, String, String, Int32)</a>
+method.</p>
+<pre><code>class TestClass
+{
+    static void Main()
+    {
+        // make an invalid argument.
+        var arg = TimeSpan.Zero;
+
+        // throws an exception, since the argument is invalid.
+        Guard.Instance().ThrowIfZero(arg, nameof(arg));
+    }
+}</code></pre>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
