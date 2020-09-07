@@ -84,14 +84,11 @@ steps:
     git config --global user.name $(OP_USER)
 
     git clone https://github.com/CodeGator/CG.Validations.git -b gh-pages origin_site -q
-    Copy-Item origin_site/.git _site -recurse -force
+    Copy-Item origin_site/.git _site -recurse
     CD _site
-    git add --ignore-errors -A 2>&1
-    git commit -m "CI Updates" -q
-    git push origin gh-pages -q
-    if ($lastexitcode -ne 0) {
-      throw ("Error pushing docs")
-    }
+    git add -A 2>&1
+    #git commit -m "CI Updates" -q
+    #git push origin gh-pages -q
   displayName: "Publish docs"  
   
 
