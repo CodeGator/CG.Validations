@@ -354,7 +354,7 @@ healthchecksdb
 .NuGet/
 artifacts/
 target/
-/**/_site/
+/**/_site2/
 .vscode/
 .vs/
 
