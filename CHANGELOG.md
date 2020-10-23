@@ -5,5 +5,7 @@
 
 * I pulled the code from CG.Core.
 
+* I dropped support for .net 4.61
+
 
 
