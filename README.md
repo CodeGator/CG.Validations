@@ -8,8 +8,12 @@
 #### What does it do?
 The package contains parameter validations used by other CodeGator packages.
 
+#### Commonly used types:
+* CG.Validations.IGuard
+* CG.Validations.Guard
+* CG.Validations.GuardExtensions
+
 #### What platform(s) does it support?
-* .NET 4.61x or above
 * .NET Standard 2.x or higher
 
 #### How do I install it?
