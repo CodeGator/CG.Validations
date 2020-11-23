@@ -7,5 +7,9 @@
 
 * I dropped support for .net 4.61
 
+* I updated the package refernces
+
+* I added a quick start sample
+
 
 
