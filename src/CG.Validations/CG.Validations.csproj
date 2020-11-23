@@ -16,6 +16,7 @@ Platforms supported:
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/CodeGator/CG.Validations</RepositoryUrl>
+    <PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -48,6 +49,13 @@ Platforms supported:
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <CustomToolNamespace>CG.Core.Properties</CustomToolNamespace>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\packageDefaultIcon-50x50.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
