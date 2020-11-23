@@ -27,4 +27,4 @@ If you've spotted a bug in the code please use the project Issues [HERE](https:/
 #### Is there any documentation?
 There is developer documentation [HERE](https://codegator.github.io/CG.Validations/)
 
-We also blog about projects like this one on our website, [HERE](http://www/codegator.com)
+We also blog about projects like this one on our website, [HERE](http://www.codegator.com)
