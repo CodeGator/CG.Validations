@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+	<TargetFrameworks>net5.0</TargetFrameworks>
     <RootNamespace>CG.Validations</RootNamespace>
     <Authors>Martin Cook</Authors>
     <Company>CodeGator</Company>
     <Description>This package contains parameter validation used by other CodeGator packages. 
 
 Platforms supported:
-      .NET Standard 2.0 or above</Description>
+      .NET 5.x or above</Description>
     <Copyright>Copyright © 2003 - 2021 by CodeGator. All rights reserved.</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/CodeGator/CG.Validations</PackageProjectUrl>
@@ -20,10 +20,10 @@ Platforms supported:
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard2.0\CG.Validations.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\net5.0\CG.Validations.xml</DocumentationFile>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net5.0|AnyCPU'">
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
 
