@@ -17,6 +17,7 @@ Platforms supported:
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/CodeGator/CG.Validations</RepositoryUrl>
     <PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
+    <PackageIconUrl />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
