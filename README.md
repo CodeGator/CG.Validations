@@ -26,6 +26,8 @@ PM> Install-Package CG.Validations
 #### How do I contact you?
 If you've spotted a bug in the code please use the project Issues [HERE](https://github.com/CodeGator/CG.Validations/issues)
 
+We also have a discussion group [HERE](https://github.com/CodeGator/CG.Validations/discussions)
+
 #### Is there any documentation?
 There is developer documentation [HERE](https://codegator.github.io/CG.Validations/)
 
