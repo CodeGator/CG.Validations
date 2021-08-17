@@ -62,6 +62,50 @@ namespace CG.Validations
         // *******************************************************************
 
         /// <summary>
+        /// This method throws an exception if the <paramref name="argValue"/> 
+        /// argument does not contain a null reference.
+        /// </summary>
+        /// <param name="guard">The guard instance to use for the operation.</param>
+        /// <param name="argValue">The argument to test.</param>
+        /// <param name="argName">The name of the argument.</param>
+        /// <param name="memberName">Not used. Supplied by the compiler.</param>
+        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
+        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
+        /// <returns>The <paramref name="guard"/> argument.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown when
+        /// the <paramref name="argValue"/> argument does not contain a null value.</exception>
+        public static IGuard ThrowIfNotNull(
+            this IGuard guard,
+            object argValue,
+            string argName,
+            [CallerMemberName] string memberName = "",
+            [CallerFilePath] string sourceFilePath = "",
+            [CallerLineNumber] int sourceLineNumber = 0
+            )
+        {
+            // Make the test.
+            if (argValue != null)
+            {
+                // Panic!!!
+                throw new ArgumentNullException(
+                    message: string.Format(
+                        CultureInfo.CurrentCulture,
+                        Resources.Guard_ArgNotNull,
+                        memberName,
+                        sourceFilePath,
+                        sourceLineNumber
+                        ),
+                    paramName: argName
+                    );
+            }
+
+            // Return the guard.
+            return guard;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
         /// This method throws an exception if the <paramref name="argValue"/>
         /// argument contains a null reference or an empty string.
         /// </summary>

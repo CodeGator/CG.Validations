@@ -3,6 +3,8 @@
 
 ## 2021.3
 
+* I added a ThrowIfNotNull check
+
 
 ## 2021.2
 

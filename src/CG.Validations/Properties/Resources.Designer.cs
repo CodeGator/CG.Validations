@@ -160,6 +160,15 @@ namespace CG.Core.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The argument does not contain a null!\r\n[called from {0} in {1}, line {2}].
+        /// </summary>
+        internal static string Guard_ArgNotNull {
+            get {
+                return ResourceManager.GetString("Guard_ArgNotNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The argument must be null or empty!\r\n[called from {0} in {1}, line {2}].
         /// </summary>
         internal static string Guard_ArgNotNullOrEmpty {
