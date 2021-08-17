@@ -1887,6 +1887,97 @@ empty GUID.</p>
       </tr>
     </tbody>
   </table>
+  <a id="CG_Validations_GuardExtensions_ThrowIfNotNull_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotNull*"></a>
+  <h4 id="CG_Validations_GuardExtensions_ThrowIfNotNull_CG_Validations_IGuard_System_Object_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotNull(CG.Validations.IGuard,System.Object,System.String,System.String,System.String,System.Int32)">ThrowIfNotNull(IGuard, Object, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>
+argument does not contain a null reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IGuard ThrowIfNotNull(this IGuard guard, object argValue, string argName, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><span class="parametername">guard</span></td>
+        <td><p>The guard instance to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">argValue</span></td>
+        <td><p>The argument to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">argName</span></td>
+        <td><p>The name of the argument.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">memberName</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceFilePath</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sourceLineNumber</span></td>
+        <td><p>Not used. Supplied by the compiler.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CG.Validations.IGuard.html">IGuard</a></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">guard</code> argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown when
+the <code data-dev-comment-type="paramref" class="paramref">argValue</code> argument does not contain a null value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="CG_Validations_GuardExtensions_ThrowIfNotNullOrEmpty_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotNullOrEmpty*"></a>
   <h4 id="CG_Validations_GuardExtensions_ThrowIfNotNullOrEmpty_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32_" data-uid="CG.Validations.GuardExtensions.ThrowIfNotNullOrEmpty(CG.Validations.IGuard,System.String,System.String,System.String,System.String,System.Int32)">ThrowIfNotNullOrEmpty(IGuard, String, String, String, String, Int32)</h4>
   <div class="markdown level1 summary"><p>This method throws an exception if the <code data-dev-comment-type="paramref" class="paramref">argValue</code>

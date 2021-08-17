@@ -191,6 +191,19 @@ references:
   isSpec: "True"
   fullName: CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid
   nameWithType: GuardExtensions.ThrowIfNotEmptyGuid
+- uid: CG.Validations.GuardExtensions.ThrowIfNotNull(CG.Validations.IGuard,System.Object,System.String,System.String,System.String,System.Int32)
+  name: ThrowIfNotNull(IGuard, Object, String, String, String, Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotNull_CG_Validations_IGuard_System_Object_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfNotNull(CG.Validations.IGuard,System.Object,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfNotNull(CG.Validations.IGuard, System.Object, System.String, System.String, System.String, System.Int32)
+  nameWithType: GuardExtensions.ThrowIfNotNull(IGuard, Object, String, String, String, Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfNotNull*
+  name: ThrowIfNotNull
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotNull_
+  commentId: Overload:CG.Validations.GuardExtensions.ThrowIfNotNull
+  isSpec: "True"
+  fullName: CG.Validations.GuardExtensions.ThrowIfNotNull
+  nameWithType: GuardExtensions.ThrowIfNotNull
 - uid: CG.Validations.GuardExtensions.ThrowIfNotNullOrEmpty(CG.Validations.IGuard,System.String,System.String,System.String,System.String,System.Int32)
   name: ThrowIfNotNullOrEmpty(IGuard, String, String, String, String, Int32)
   href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotNullOrEmpty_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32_
