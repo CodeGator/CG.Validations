@@ -1,6 +1,10 @@
 # CG.Validations change log
 ---
 
+## 2022.1
+
+* I changed the framework to 6.0
+
 ## 2021.3
 
 * I added a ThrowIfNotNull check

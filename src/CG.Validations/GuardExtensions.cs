@@ -62,50 +62,6 @@ namespace CG.Validations
         // *******************************************************************
 
         /// <summary>
-        /// This method throws an exception if the <paramref name="argValue"/> 
-        /// argument does not contain a null reference.
-        /// </summary>
-        /// <param name="guard">The guard instance to use for the operation.</param>
-        /// <param name="argValue">The argument to test.</param>
-        /// <param name="argName">The name of the argument.</param>
-        /// <param name="memberName">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
-        /// <returns>The <paramref name="guard"/> argument.</returns>
-        /// <exception cref="ArgumentException">This exception is thrown when
-        /// the <paramref name="argValue"/> argument does not contain a null value.</exception>
-        public static IGuard ThrowIfNotNull(
-            this IGuard guard,
-            object argValue,
-            string argName,
-            [CallerMemberName] string memberName = "",
-            [CallerFilePath] string sourceFilePath = "",
-            [CallerLineNumber] int sourceLineNumber = 0
-            )
-        {
-            // Make the test.
-            if (argValue != null)
-            {
-                // Panic!!!
-                throw new ArgumentNullException(
-                    message: string.Format(
-                        CultureInfo.CurrentCulture,
-                        Resources.Guard_ArgNotNull,
-                        memberName,
-                        sourceFilePath,
-                        sourceLineNumber
-                        ),
-                    paramName: argName
-                    );
-            }
-
-            // Return the guard.
-            return guard;
-        }
-
-        // *******************************************************************
-
-        /// <summary>
         /// This method throws an exception if the <paramref name="argValue"/>
         /// argument contains a null reference or an empty string.
         /// </summary>
@@ -274,70 +230,8 @@ namespace CG.Validations
             return guard;
         }
 
-        // ******************************************************************
-
-        /// <summary>
-        /// This method throws an exception if the <paramref name="argValue"/> 
-        /// argument contains a value that is less than zero.
-        /// </summary>
-        /// <param name="guard">The guard to use for the operation.</param>
-        /// <param name="argValue">The argument to test.</param>
-        /// <param name="argName">The name of the argument.</param>
-        /// <param name="memberName">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
-        /// <returns>The <paramref name="guard"/> value.</returns>
-        /// <exception cref="ArgumentException">This exception is thrown when
-        /// the <paramref name="argValue"/> argument contains a value that is
-        /// less than zero.
-        /// </exception>
-        /// <example>
-        /// This example shows how to call the <see cref="GuardExtensions.ThrowIfLessThanZero(IGuard, float, string, string, string, int)"/>
-        /// method.
-        /// <code>
-        /// class TestClass
-        /// {
-        ///     static void Main()
-        ///     {
-        ///         // make an invalid argument.
-        ///         var arg = -1L;
-        /// 
-        ///         // throws an exception, since the argument is invalid.
-        ///         Guard.Instance().ThrowIfLessThanZero(arg, nameof(arg));
-        ///     }
-        /// }
-        /// </code>
-        /// </example>
-        public static IGuard ThrowIfLessThanZero(
-            this IGuard guard,
-            float argValue,
-            string argName,
-            [CallerMemberName] string memberName = "",
-            [CallerFilePath] string sourceFilePath = "",
-            [CallerLineNumber] int sourceLineNumber = 0
-            )
-        {
-            // Make the test.
-            if (argValue < 0)
-            {
-                // Panic!!!
-                throw new ArgumentException(
-                    message: string.Format(
-                        CultureInfo.CurrentCulture,
-                        Resources.Guard_ArgLessThanZero,
-                        memberName,
-                        sourceFilePath,
-                        sourceLineNumber
-                        ),
-                    paramName: argName
-                    );
-            }
-
-            // Return the guard.
-            return guard;
-        }
-
         // *******************************************************************
+
 
         /// <summary>
         /// This method throws an exception if the <paramref name="argValue"/>
@@ -443,8 +337,7 @@ namespace CG.Validations
             )
         {
             // Make the test.
-            DateTime val;
-            if (!DateTime.TryParse($"{argValue}", out val))
+            if (!DateTime.TryParse($"{argValue}", out _))
             {
                 // Panic!!!
                 throw new ArgumentException(
@@ -713,69 +606,6 @@ namespace CG.Validations
             return guard;
         }
 
-        // ******************************************************************
-
-        /// <summary>
-        /// This method throws an exception if the '<paramref name="argValue"/>
-        /// argument contains a value that is less than or equal to zero.
-        /// </summary>
-        /// <param name="guard">The guard to use for the operation.</param>
-        /// <param name="argValue">The argument to test.</param>
-        /// <param name="argName">The name of the argument.</param>
-        /// <param name="memberName">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
-        /// <returns>The <paramref name="guard"/> value.</returns>
-        /// <exception cref="ArgumentException">This exception is thrown when
-        /// the <paramref name="argValue"/> argument contains a value that is
-        /// less than or equal to zero.
-        /// </exception>
-        /// <example>
-        /// This example shows how to call the <see cref="GuardExtensions.ThrowIfLessThanOrEqualZero(IGuard, float, string, string, string, int)"/>
-        /// method.
-        /// <code>
-        /// class TestClass
-        /// {
-        ///     static void Main()
-        ///     {
-        ///         // make an invalid argument.
-        ///         var arg = 0;
-        /// 
-        ///         // throws an exception, since the argument is less than or equal to zero.
-        ///         Guard.Instance().ThrowIfLessThanOrEqualZero(arg, nameof(arg));
-        ///     }
-        /// }
-        /// </code>
-        /// </example>
-        public static IGuard ThrowIfLessThanOrEqualZero(
-            this IGuard guard,
-            float argValue,
-            string argName,
-            [CallerMemberName] string memberName = "",
-            [CallerFilePath] string sourceFilePath = "",
-            [CallerLineNumber] int sourceLineNumber = 0
-            )
-        {
-            // Make the test.
-            if (argValue <= 0)
-            {
-                // Panic!!!
-                throw new ArgumentException(
-                    message: string.Format(
-                        CultureInfo.CurrentCulture,
-                        Resources.Guard_ArgLessThanEqualZero,
-                        memberName,
-                        sourceFilePath,
-                        sourceLineNumber
-                        ),
-                    paramName: argName
-                    );
-            }
-
-            // Return the guard.
-            return guard;
-        }
-
         // *******************************************************************
 
         /// <summary>
@@ -950,75 +780,6 @@ namespace CG.Validations
             this IGuard guard,
             long argValue,
             long amount,
-            string argName,
-            [CallerMemberName] string memberName = "",
-            [CallerFilePath] string sourceFilePath = "",
-            [CallerLineNumber] int sourceLineNumber = 0
-            )
-        {
-            // Make the test.
-            if (argValue < amount)
-            {
-                // Panic!!!
-                throw new ArgumentException(
-                    message: string.Format(
-                        CultureInfo.CurrentCulture,
-                        Resources.Guard_ArgLessThan,
-                        amount,
-                        memberName,
-                        sourceFilePath,
-                        sourceLineNumber
-                        ),
-                    paramName: argName
-                    );
-            }
-
-            // Return the guard.
-            return guard;
-        }
-
-        // *******************************************************************
-
-        /// <summary>
-        /// This method will throw an exception if the <paramref name="argValue"/>
-        /// argument is less than the <paramref name="amount"/> argument.
-        /// </summary>
-        /// <param name="guard">The guard to use for the operation.</param>
-        /// <param name="argValue">The argument to be validated.</param>
-        /// <param name="amount">The amount to be used for validation.</param>
-        /// <param name="argName">The name of the argument.</param>
-        /// <param name="memberName">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
-        /// <returns>The <paramref name="guard"/> value.</returns>
-        /// <exception cref="ArgumentException">This exception is thrown when
-        /// the <paramref name="argValue"/> argument contains a value that is
-        /// less than the <paramref name="amount"/> argument.
-        /// </exception>
-        /// <example>
-        /// This example shows how to call the <see cref="GuardExtensions.ThrowIfLessThan(IGuard, float, float, string, string, string, int)"/>
-        /// method.
-        /// <code>
-        /// class TestClass
-        /// {
-        ///     static void Main()
-        ///     {
-        ///         // make an invalid argument.
-        ///         var arg = 1;
-        /// 
-        ///         // make the value to compare it against.
-        ///         var amount = 2; 
-        /// 
-        ///         // throws an exception, since the argument is less than 2.
-        ///         Guard.Instance().ThrowIfLessThan(arg, amount, nameof(arg));
-        ///     }
-        /// }
-        /// </code>
-        /// </example>
-        public static IGuard ThrowIfLessThan(
-            this IGuard guard,
-            float argValue,
-            float amount,
             string argName,
             [CallerMemberName] string memberName = "",
             [CallerFilePath] string sourceFilePath = "",
@@ -1272,75 +1033,6 @@ namespace CG.Validations
         /// greater than the <paramref name="amount"/> argument.
         /// </exception>
         /// <example>
-        /// This example shows how to call the <see cref="GuardExtensions.ThrowIfGreaterThan(IGuard, float, float, string, string, string, int)"/>
-        /// method.
-        /// <code>
-        /// class TestClass
-        /// {
-        ///     static void Main()
-        ///     {
-        ///         // make an invalid argument.
-        ///         var arg = 2;
-        /// 
-        ///         // make the value to compare it against.
-        ///         var amount = 1; 
-        /// 
-        ///         // throws an exception, since the argument is greater than 1.
-        ///         Guard.Instance().ThrowIfGreaterThan(arg, amount, nameof(arg));
-        ///     }
-        /// }
-        /// </code>
-        /// </example>
-        public static IGuard ThrowIfGreaterThan(
-            this IGuard guard,
-            float argValue,
-            float amount,
-            string argName,
-            [CallerMemberName] string memberName = "",
-            [CallerFilePath] string sourceFilePath = "",
-            [CallerLineNumber] int sourceLineNumber = 0
-            )
-        {
-            // Make the test.
-            if (argValue > amount)
-            {
-                // Panic!!!
-                throw new ArgumentException(
-                    message: string.Format(
-                        CultureInfo.CurrentCulture,
-                        Resources.Guard_ArgGreaterThan,
-                        amount,
-                        memberName,
-                        sourceFilePath,
-                        sourceLineNumber
-                        ),
-                    paramName: argName
-                    );
-            }
-
-            // Return the guard.
-            return guard;
-        }
-
-        // *******************************************************************
-
-        /// <summary>
-        /// This method will throw an exception if the <paramref name="argValue"/> 
-        /// argument is greater than the <paramref name="amount"/> argument. 
-        /// </summary>
-        /// <param name="guard">The guard to use for the operation.</param>
-        /// <param name="argValue">The argument to be validated.</param>
-        /// <param name="amount">The amount to be used for validation.</param>
-        /// <param name="argName">The name of the argument.</param>
-        /// <param name="memberName">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
-        /// <returns>The <paramref name="guard"/> value.</returns>
-        /// <exception cref="ArgumentException">This exception is thrown when
-        /// the <paramref name="argValue"/> argument contains a value that is
-        /// greater than the <paramref name="amount"/> argument.
-        /// </exception>
-        /// <example>
         /// This example shows how to call the <see cref="GuardExtensions.ThrowIfGreaterThan(IGuard, TimeSpan, TimeSpan, string, string, string, int)"/>
         /// method.
         /// <code>
@@ -1521,69 +1213,6 @@ namespace CG.Validations
 
         /// <summary>
         /// This method throws an exception if the <paramref name="argValue"/> 
-        /// argument contains a zero.
-        /// </summary>
-        /// <param name="guard">The guard to use for the operation.</param>
-        /// <param name="argValue">The argument to test.</param>
-        /// <param name="argName">The name of the argument.</param>
-        /// <param name="memberName">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
-        /// <returns>The <paramref name="guard"/> value.</returns>
-        /// <exception cref="ArgumentException">This exception is thrown when
-        /// the <paramref name="argValue"/> argument contains a value that is
-        /// zero.
-        /// </exception>
-        /// <example>
-        /// This example shows how to call the <see cref="GuardExtensions.ThrowIfZero(IGuard, float, string, string, string, int)"/>
-        /// method.
-        /// <code>
-        /// class TestClass
-        /// {
-        ///     static void Main()
-        ///     {
-        ///         // make an invalid argument.
-        ///         var arg = 0;
-        /// 
-        ///         // throws an exception, since the argument is zero.
-        ///         Guard.Instance().ThrowIfZero(arg, nameof(arg));
-        ///     }
-        /// }
-        /// </code>
-        /// </example>
-        public static IGuard ThrowIfZero(
-            this IGuard guard,
-            float argValue,
-            string argName,
-            [CallerMemberName] string memberName = "",
-            [CallerFilePath] string sourceFilePath = "",
-            [CallerLineNumber] int sourceLineNumber = 0
-            )
-        {
-            // Make the test.
-            if (argValue == 0)
-            {
-                // Panic!!!
-                throw new ArgumentException(
-                    message: string.Format(
-                        CultureInfo.CurrentCulture,
-                        Resources.Guard_ArgZero,
-                        memberName,
-                        sourceFilePath,
-                        sourceLineNumber
-                        ),
-                    paramName: argName
-                    );
-            }
-
-            // Return the guard.
-            return guard;
-        }
-
-        // ******************************************************************
-
-        /// <summary>
-        /// This method throws an exception if the <paramref name="argValue"/> 
         /// argument contains something other than zero.
         /// </summary>
         /// <param name="guard">The guard to use for the operation.</param>
@@ -1617,69 +1246,6 @@ namespace CG.Validations
         public static IGuard ThrowIfNotZero(
             this IGuard guard,
             long argValue,
-            string argName,
-            [CallerMemberName] string memberName = "",
-            [CallerFilePath] string sourceFilePath = "",
-            [CallerLineNumber] int sourceLineNumber = 0
-            )
-        {
-            // Make the test.
-            if (argValue != 0)
-            {
-                // Panic!!!
-                throw new ArgumentException(
-                    message: string.Format(
-                        CultureInfo.CurrentCulture,
-                        Resources.Guard_ArgNotZero,
-                        memberName,
-                        sourceFilePath,
-                        sourceLineNumber
-                        ),
-                    paramName: argName
-                    );
-            }
-
-            // Return the guard.
-            return guard;
-        }
-
-        // ******************************************************************
-
-        /// <summary>
-        /// This method throws an exception if the <paramref name="argValue"/> 
-        /// argument contains something other than zero.
-        /// </summary>
-        /// <param name="guard">The guard to use for the operation.</param>
-        /// <param name="argValue">The argument to test.</param>
-        /// <param name="argName">The name of the argument.</param>
-        /// <param name="memberName">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
-        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
-        /// <returns>The <paramref name="guard"/> value.</returns>
-        /// <exception cref="ArgumentException">This exception is thrown when
-        /// the <paramref name="argValue"/> argument contains a value that is
-        /// something other than zero.
-        /// </exception>
-        /// <example>
-        /// This example shows how to call the <see cref="GuardExtensions.ThrowIfZero(IGuard, float, string, string, string, int)"/>
-        /// method.
-        /// <code>
-        /// class TestClass
-        /// {
-        ///     static void Main()
-        ///     {
-        ///         // make an invalid argument.
-        ///         var arg = 1;
-        /// 
-        ///         // throws an exception, since the argument is not zero.
-        ///         Guard.Instance().ThrowIfNotZero(arg, nameof(arg));
-        ///     }
-        /// }
-        /// </code>
-        /// </example>
-        public static IGuard ThrowIfNotZero(
-            this IGuard guard,
-            float argValue,
             string argName,
             [CallerMemberName] string memberName = "",
             [CallerFilePath] string sourceFilePath = "",
