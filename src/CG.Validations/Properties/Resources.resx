@@ -120,6 +120,9 @@
   <data name="Guard_ArgEmptyCollection" xml:space="preserve">
     <value>The argument may not contain an empty collection!\r\n[called from {0} in {1}, line {2}]</value>
   </data>
+  <data name="Guard_ArgEqual" xml:space="preserve">
+    <value>The argument may not equal!\r\n[called from {0} in {1}, line {2}]</value>
+  </data>
   <data name="Guard_ArgGreaterThan" xml:space="preserve">
     <value>The argument must be greater than  {0}!\r\n[called from {1} in {2}, line {3}]</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Guard_ArgNotEmptyCollection" xml:space="preserve">
     <value>The argument must contain an empty collection!\r\n[called from {0} in {1}, line {2}]</value>
+  </data>
+  <data name="Guard_ArgNotEqual" xml:space="preserve">
+    <value>The argument must be equal!\r\n[called from {0} in {1}, line {2}]</value>
   </data>
   <data name="Guard_ArgNotNull" xml:space="preserve">
     <value>The argument does not contain a null!\r\n[called from {0} in {1}, line {2}]</value>

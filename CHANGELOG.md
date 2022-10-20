@@ -1,6 +1,10 @@
 # CG.Validations change log
 ---
 
+## 2022.2
+
+* I added extra validation methods
+
 ## 2022.1
 
 * I changed the framework to 6.0

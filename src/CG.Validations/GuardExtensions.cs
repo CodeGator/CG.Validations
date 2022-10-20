@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 namespace CG.Validations
 {
     /// <summary>
-    /// This class contains extensiom methods related to the <see cref="IGuard"/>
+    /// This class contains extension methods related to the <see cref="IGuard"/>
     /// type.
     /// </summary>
     public static partial class GuardExtensions
@@ -1572,6 +1572,270 @@ namespace CG.Validations
                     message: string.Format(
                         CultureInfo.CurrentCulture,
                         Resources.Guard_MalformedUri,
+                        memberName,
+                        sourceFilePath,
+                        sourceLineNumber
+                        ),
+                    paramName: argName
+                    );
+            }
+
+            // Return the guard.
+            return guard;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method throws an exception if the '<paramref name="argValue"/>
+        /// argument contains a value that is equal to the <paramref name="compareValue"/>
+        /// parameter.
+        /// </summary>
+        /// <param name="guard">The guard to use for the operation.</param>
+        /// <param name="argValue">The argument to test.</param>
+        /// <param name="compareValue">The comparison value.</param>
+        /// <param name="argName">The name of the argument.</param>
+        /// <param name="memberName">Not used. Supplied by the compiler.</param>
+        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
+        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
+        /// <returns>The <paramref name="guard"/> value.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown when
+        /// the <paramref name="argValue"/> argument contains a value that is
+        /// less than or equal to zero.
+        /// </exception>
+        /// <example>
+        /// This example shows how to call the <see cref="ThrowIfEqual(IGuard, long, long, string, string, string, int)"/>
+        /// method.
+        /// <code>
+        /// class TestClass
+        /// {
+        ///     static void Main()
+        ///     {
+        ///         // make an invalid argument.
+        ///         var arg = 0;
+        /// 
+        ///         // throws an exception, since the argument is equal.
+        ///         Guard.Instance().ThrowIfEqual(arg, 0, nameof(arg));
+        ///     }
+        /// }
+        /// </code>
+        /// </example>
+        public static IGuard ThrowIfEqual(
+            this IGuard guard,
+            long argValue,
+            long compareValue,
+            string argName,
+            [CallerMemberName] string memberName = "",
+            [CallerFilePath] string sourceFilePath = "",
+            [CallerLineNumber] int sourceLineNumber = 0
+            )
+        {
+            // Make the test.
+            if (argValue == compareValue)
+            {
+                // Panic!!!
+                throw new ArgumentException(
+                    message: string.Format(
+                        CultureInfo.CurrentCulture,
+                        Resources.Guard_ArgEqual,
+                        memberName,
+                        sourceFilePath,
+                        sourceLineNumber
+                        ),
+                    paramName: argName
+                    );
+            }
+
+            // Return the guard.
+            return guard;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method throws an exception if the '<paramref name="argValue"/>
+        /// argument contains a value that is equal to the <paramref name="compareValue"/>
+        /// parameter.
+        /// </summary>
+        /// <param name="guard">The guard to use for the operation.</param>
+        /// <param name="argValue">The argument to test.</param>
+        /// <param name="compareValue">The comparison value.</param>
+        /// <param name="argName">The name of the argument.</param>
+        /// <param name="memberName">Not used. Supplied by the compiler.</param>
+        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
+        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
+        /// <returns>The <paramref name="guard"/> value.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown when
+        /// the <paramref name="argValue"/> argument contains a value that is
+        /// less than or equal to zero.
+        /// </exception>
+        /// <example>
+        /// This example shows how to call the <see cref="ThrowIfEqual(IGuard, int, int, string, string, string, int)"/>
+        /// method.
+        /// <code>
+        /// class TestClass
+        /// {
+        ///     static void Main()
+        ///     {
+        ///         // make an invalid argument.
+        ///         var arg = 0;
+        /// 
+        ///         // throws an exception, since the argument is equal.
+        ///         Guard.Instance().ThrowIfEqual(arg, 0, nameof(arg));
+        ///     }
+        /// }
+        /// </code>
+        /// </example>
+        public static IGuard ThrowIfEqual(
+            this IGuard guard,
+            int argValue,
+            int compareValue,
+            string argName,
+            [CallerMemberName] string memberName = "",
+            [CallerFilePath] string sourceFilePath = "",
+            [CallerLineNumber] int sourceLineNumber = 0
+            )
+        {
+            // Make the test.
+            if (argValue == compareValue)
+            {
+                // Panic!!!
+                throw new ArgumentException(
+                    message: string.Format(
+                        CultureInfo.CurrentCulture,
+                        Resources.Guard_ArgEqual,
+                        memberName,
+                        sourceFilePath,
+                        sourceLineNumber
+                        ),
+                    paramName: argName
+                    );
+            }
+
+            // Return the guard.
+            return guard;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method throws an exception if the '<paramref name="argValue"/>
+        /// argument contains a value that is not equal to the <paramref name="compareValue"/>
+        /// parameter.
+        /// </summary>
+        /// <param name="guard">The guard to use for the operation.</param>
+        /// <param name="argValue">The argument to test.</param>
+        /// <param name="compareValue">The comparison value.</param>
+        /// <param name="argName">The name of the argument.</param>
+        /// <param name="memberName">Not used. Supplied by the compiler.</param>
+        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
+        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
+        /// <returns>The <paramref name="guard"/> value.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown when
+        /// the <paramref name="argValue"/> argument contains a value that is
+        /// less than or equal to zero.
+        /// </exception>
+        /// <example>
+        /// This example shows how to call the <see cref="ThrowIfNotEqual(IGuard, long, long, string, string, string, int)"/>
+        /// method.
+        /// <code>
+        /// class TestClass
+        /// {
+        ///     static void Main()
+        ///     {
+        ///         // make an invalid argument.
+        ///         var arg = 0;
+        /// 
+        ///         // throws an exception, since the argument is not equal.
+        ///         Guard.Instance().ThrowIfNotEqual(arg, 1, nameof(arg));
+        ///     }
+        /// }
+        /// </code>
+        /// </example>
+        public static IGuard ThrowIfNotEqual(
+            this IGuard guard,
+            long argValue,
+            long compareValue,
+            string argName,
+            [CallerMemberName] string memberName = "",
+            [CallerFilePath] string sourceFilePath = "",
+            [CallerLineNumber] int sourceLineNumber = 0
+            )
+        {
+            // Make the test.
+            if (argValue != compareValue)
+            {
+                // Panic!!!
+                throw new ArgumentException(
+                    message: string.Format(
+                        CultureInfo.CurrentCulture,
+                        Resources.Guard_ArgNotEqual,
+                        memberName,
+                        sourceFilePath,
+                        sourceLineNumber
+                        ),
+                    paramName: argName
+                    );
+            }
+
+            // Return the guard.
+            return guard;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method throws an exception if the '<paramref name="argValue"/>
+        /// argument contains a value that is not equal to the <paramref name="compareValue"/>
+        /// parameter.
+        /// </summary>
+        /// <param name="guard">The guard to use for the operation.</param>
+        /// <param name="argValue">The argument to test.</param>
+        /// <param name="compareValue">The comparison value.</param>
+        /// <param name="argName">The name of the argument.</param>
+        /// <param name="memberName">Not used. Supplied by the compiler.</param>
+        /// <param name="sourceFilePath">Not used. Supplied by the compiler.</param>
+        /// <param name="sourceLineNumber">Not used. Supplied by the compiler.</param>
+        /// <returns>The <paramref name="guard"/> value.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown when
+        /// the <paramref name="argValue"/> argument contains a value that is
+        /// less than or equal to zero.
+        /// </exception>
+        /// <example>
+        /// This example shows how to call the <see cref="ThrowIfNotEqual(IGuard, int, int, string, string, string, int)"/>
+        /// method.
+        /// <code>
+        /// class TestClass
+        /// {
+        ///     static void Main()
+        ///     {
+        ///         // make an invalid argument.
+        ///         var arg = 0;
+        /// 
+        ///         // throws an exception, since the argument is not equal.
+        ///         Guard.Instance().ThrowIfNotEqual(arg, 1, nameof(arg));
+        ///     }
+        /// }
+        /// </code>
+        /// </example>
+        public static IGuard ThrowIfNotEqual(
+            this IGuard guard,
+            int argValue,
+            int compareValue,
+            string argName,
+            [CallerMemberName] string memberName = "",
+            [CallerFilePath] string sourceFilePath = "",
+            [CallerLineNumber] int sourceLineNumber = 0
+            )
+        {
+            // Make the test.
+            if (argValue != compareValue)
+            {
+                // Panic!!!
+                throw new ArgumentException(
+                    message: string.Format(
+                        CultureInfo.CurrentCulture,
+                        Resources.Guard_ArgNotEqual,
                         memberName,
                         sourceFilePath,
                         sourceLineNumber

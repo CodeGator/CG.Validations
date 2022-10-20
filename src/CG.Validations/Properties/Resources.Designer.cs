@@ -70,6 +70,15 @@ namespace CG.Core.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The argument may not equal!\r\n[called from {0} in {1}, line {2}].
+        /// </summary>
+        internal static string Guard_ArgEqual {
+            get {
+                return ResourceManager.GetString("Guard_ArgEqual", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The argument must be greater than  {0}!\r\n[called from {1} in {2}, line {3}].
         /// </summary>
         internal static string Guard_ArgGreaterThan {
@@ -156,6 +165,15 @@ namespace CG.Core.Properties {
         internal static string Guard_ArgNotEmptyCollection {
             get {
                 return ResourceManager.GetString("Guard_ArgNotEmptyCollection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The argument must be equal!\r\n[called from {0} in {1}, line {2}].
+        /// </summary>
+        internal static string Guard_ArgNotEqual {
+            get {
+                return ResourceManager.GetString("Guard_ArgNotEqual", resourceCulture);
             }
         }
         
