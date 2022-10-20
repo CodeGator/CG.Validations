@@ -45,6 +45,25 @@ references:
   isSpec: "True"
   fullName: CG.Validations.GuardExtensions.ThrowIfEmptyGuid
   nameWithType: GuardExtensions.ThrowIfEmptyGuid
+- uid: CG.Validations.GuardExtensions.ThrowIfEqual(CG.Validations.IGuard,System.Int32,System.Int32,System.String,System.String,System.String,System.Int32)
+  name: ThrowIfEqual(IGuard, Int32, Int32, String, String, String, Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfEqual_CG_Validations_IGuard_System_Int32_System_Int32_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfEqual(CG.Validations.IGuard,System.Int32,System.Int32,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfEqual(CG.Validations.IGuard, System.Int32, System.Int32, System.String, System.String, System.String, System.Int32)
+  nameWithType: GuardExtensions.ThrowIfEqual(IGuard, Int32, Int32, String, String, String, Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfEqual(CG.Validations.IGuard,System.Int64,System.Int64,System.String,System.String,System.String,System.Int32)
+  name: ThrowIfEqual(IGuard, Int64, Int64, String, String, String, Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfEqual_CG_Validations_IGuard_System_Int64_System_Int64_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfEqual(CG.Validations.IGuard,System.Int64,System.Int64,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfEqual(CG.Validations.IGuard, System.Int64, System.Int64, System.String, System.String, System.String, System.Int32)
+  nameWithType: GuardExtensions.ThrowIfEqual(IGuard, Int64, Int64, String, String, String, Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfEqual*
+  name: ThrowIfEqual
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfEqual_
+  commentId: Overload:CG.Validations.GuardExtensions.ThrowIfEqual
+  isSpec: "True"
+  fullName: CG.Validations.GuardExtensions.ThrowIfEqual
+  nameWithType: GuardExtensions.ThrowIfEqual
 - uid: CG.Validations.GuardExtensions.ThrowIfFalse(CG.Validations.IGuard,System.Boolean,System.String,System.String,System.String,System.Int32)
   name: ThrowIfFalse(IGuard, Boolean, String, String, String, Int32)
   href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfFalse_CG_Validations_IGuard_System_Boolean_System_String_System_String_System_String_System_Int32_
@@ -191,6 +210,25 @@ references:
   isSpec: "True"
   fullName: CG.Validations.GuardExtensions.ThrowIfNotEmptyGuid
   nameWithType: GuardExtensions.ThrowIfNotEmptyGuid
+- uid: CG.Validations.GuardExtensions.ThrowIfNotEqual(CG.Validations.IGuard,System.Int32,System.Int32,System.String,System.String,System.String,System.Int32)
+  name: ThrowIfNotEqual(IGuard, Int32, Int32, String, String, String, Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotEqual_CG_Validations_IGuard_System_Int32_System_Int32_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfNotEqual(CG.Validations.IGuard,System.Int32,System.Int32,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfNotEqual(CG.Validations.IGuard, System.Int32, System.Int32, System.String, System.String, System.String, System.Int32)
+  nameWithType: GuardExtensions.ThrowIfNotEqual(IGuard, Int32, Int32, String, String, String, Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfNotEqual(CG.Validations.IGuard,System.Int64,System.Int64,System.String,System.String,System.String,System.Int32)
+  name: ThrowIfNotEqual(IGuard, Int64, Int64, String, String, String, Int32)
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotEqual_CG_Validations_IGuard_System_Int64_System_Int64_System_String_System_String_System_String_System_Int32_
+  commentId: M:CG.Validations.GuardExtensions.ThrowIfNotEqual(CG.Validations.IGuard,System.Int64,System.Int64,System.String,System.String,System.String,System.Int32)
+  fullName: CG.Validations.GuardExtensions.ThrowIfNotEqual(CG.Validations.IGuard, System.Int64, System.Int64, System.String, System.String, System.String, System.Int32)
+  nameWithType: GuardExtensions.ThrowIfNotEqual(IGuard, Int64, Int64, String, String, String, Int32)
+- uid: CG.Validations.GuardExtensions.ThrowIfNotEqual*
+  name: ThrowIfNotEqual
+  href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotEqual_
+  commentId: Overload:CG.Validations.GuardExtensions.ThrowIfNotEqual
+  isSpec: "True"
+  fullName: CG.Validations.GuardExtensions.ThrowIfNotEqual
+  nameWithType: GuardExtensions.ThrowIfNotEqual
 - uid: CG.Validations.GuardExtensions.ThrowIfNotNullOrEmpty(CG.Validations.IGuard,System.String,System.String,System.String,System.String,System.Int32)
   name: ThrowIfNotNullOrEmpty(IGuard, String, String, String, String, Int32)
   href: api/CG.Validations.GuardExtensions.html#CG_Validations_GuardExtensions_ThrowIfNotNullOrEmpty_CG_Validations_IGuard_System_String_System_String_System_String_System_String_System_Int32_
