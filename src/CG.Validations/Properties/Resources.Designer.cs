@@ -19,7 +19,7 @@ namespace CG.Core.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -66,6 +66,15 @@ namespace CG.Core.Properties {
         internal static string Guard_ArgEmptyCollection {
             get {
                 return ResourceManager.GetString("Guard_ArgEmptyCollection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The argument may not equal!\r\n[called from {0} in {1}, line {2}].
+        /// </summary>
+        internal static string Guard_ArgEqual {
+            get {
+                return ResourceManager.GetString("Guard_ArgEqual", resourceCulture);
             }
         }
         
@@ -156,6 +165,15 @@ namespace CG.Core.Properties {
         internal static string Guard_ArgNotEmptyCollection {
             get {
                 return ResourceManager.GetString("Guard_ArgNotEmptyCollection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The argument must be equal!\r\n[called from {0} in {1}, line {2}].
+        /// </summary>
+        internal static string Guard_ArgNotEqual {
+            get {
+                return ResourceManager.GetString("Guard_ArgNotEqual", resourceCulture);
             }
         }
         
