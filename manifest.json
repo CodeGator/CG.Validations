@@ -61,6 +61,30 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.ValidatorEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.ComponentModel.DataAnnotations.ValidatorEx.html",
+          "hash": "LZQ1vqPe77qtyUZkhEZLBDD4d/R/nOx5VnthgbyQ+Zs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.ComponentModel.DataAnnotations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.ComponentModel.DataAnnotations.html",
+          "hash": "5H3jM/3vcd7rRQXXzZR23B4eXEYFnbfsWgEKXYgGo/o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
@@ -78,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "4Jqa9r6Bf4fonR4XgMeot0IDszapdloCALGrrbf2pNI="
+          "hash": "GACzRpNHTEKYjA0d1FTXbIHXAssYg8QCVcXNAGD7VIw="
         }
       },
       "is_incremental": false,
@@ -197,7 +221,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 6,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
