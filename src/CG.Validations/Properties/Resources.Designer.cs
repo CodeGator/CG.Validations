@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CG.Core.Properties {
+namespace CG.Validations.Properties {
     using System;
     
     
@@ -300,6 +300,24 @@ namespace CG.Core.Properties {
         internal static string Guard_NotEmptyGuid {
             get {
                 return ResourceManager.GetString("Guard_NotEmptyGuid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;{0} validation error! Errors: {1}, Properties: {2}\r\n[called from {3} in {4}, line {5}]&quot;.
+        /// </summary>
+        internal static string ObjectPropValidation {
+            get {
+                return ResourceManager.GetString("ObjectPropValidation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; -&gt; &apos;The property is null but is marked as required!&apos;.
+        /// </summary>
+        internal static string PropertyNullRequired {
+            get {
+                return ResourceManager.GetString("PropertyNullRequired", resourceCulture);
             }
         }
     }

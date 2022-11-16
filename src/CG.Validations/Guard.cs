@@ -1,6 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-
+﻿
 namespace CG.Validations
 {
     /// <summary>
@@ -18,7 +16,7 @@ namespace CG.Validations
         /// <summary>
         /// This field contains the singleton instance.
         /// </summary>
-        private static Guard _instance;
+        private static Guard? _instance;
 
         #endregion
 
@@ -39,7 +37,7 @@ namespace CG.Validations
             if (_instance == null)
             {
                 // Create the instance of T
-                _instance = Activator.CreateInstance(typeof(Guard), true) as Guard;
+                _instance = new Guard();
             }
 
             // Return the instance.
@@ -55,7 +53,7 @@ namespace CG.Validations
         #region Constructors
 
         /// <summary>
-        /// This constuctor creates a new instance of the <see cref="Guard"/>
+        /// This constructor creates a new instance of the <see cref="Guard"/>
         /// class.
         /// </summary>
         [DebuggerStepThrough]
