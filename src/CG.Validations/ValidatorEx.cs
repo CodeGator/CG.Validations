@@ -5,7 +5,7 @@ namespace System.ComponentModel.DataAnnotations;
 /// This class provides methods we wish the <see cref="Validator"/> class
 /// had provided.
 /// </summary>
-internal static class ValidatorEx
+public static class ValidatorEx
 {
     // *******************************************************************
     // Public methods.
