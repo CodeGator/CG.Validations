@@ -198,4 +198,10 @@
   <data name="Guard_NotEmptyGuid" xml:space="preserve">
     <value>The argument should contain an empty GUID!\r\n[called from {0} in {1}, line {2}]</value>
   </data>
+  <data name="ObjectPropValidation" xml:space="preserve">
+    <value>"{0} validation error! Errors: {1}, Properties: {2}\r\n[called from {3} in {4}, line {5}]"</value>
+  </data>
+  <data name="PropertyNullRequired" xml:space="preserve">
+    <value>'{0}' -&gt; 'The property is null but is marked as required!'</value>
+  </data>
 </root>

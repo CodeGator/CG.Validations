@@ -1,6 +1,11 @@
 # CG.Validations change log
 ---
 
+## 2023.1
+
+* I moved the ValidatorEx type into this assembly.
+* I added a ThrowIfInvalidObject method to IGuard extensions.
+
 ## 2022.2
 
 * I added extra validation methods
@@ -28,7 +33,7 @@
 
 * I dropped support for .net 4.61
 
-* I updated the package refernces
+* I updated the package references
 
 * I added a quick start sample
 
