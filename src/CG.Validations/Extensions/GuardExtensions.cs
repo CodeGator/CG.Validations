@@ -137,7 +137,7 @@ public static partial class GuardExtensions
     /// </example>
     public static IGuard ThrowIfNull(
         this IGuard guard,
-        object argValue,
+        object? argValue,
         string argName,
         [CallerMemberName] string memberName = "",
         [CallerFilePath] string sourceFilePath = "",
@@ -199,7 +199,7 @@ public static partial class GuardExtensions
     /// </example>
     public static IGuard ThrowIfNullOrEmpty(
         this IGuard guard,
-        string argValue,
+        string? argValue,
         string argName,
         [CallerMemberName] string memberName = "",
         [CallerFilePath] string sourceFilePath = "",
@@ -1492,7 +1492,7 @@ public static partial class GuardExtensions
     /// </example>
     public static IGuard ThrowIfNotNullOrEmpty(
         this IGuard guard,
-        string argValue,
+        string? argValue,
         string argName,
         [CallerMemberName] string memberName = "",
         [CallerFilePath] string sourceFilePath = "",
