@@ -89,6 +89,9 @@ public static class ValidatorEx
                 // Loop through the properties.
                 foreach (var prop in props)
                 {
+                    // Create a place to put the results.
+                    var tempValidationResults = new List<ValidationResult>();
+
                     // Get the getter method.
                     var getGetMethod = prop.GetGetMethod();
 
@@ -101,9 +104,8 @@ public static class ValidatorEx
                     // Does the getter require parameters?
                     if (getGetMethod.GetParameters().Any())
                     {
-                        // If we get here then the property type is most likely
-                        //   a collection. For now, we'll ignore these but, at
-                        //   some point, we should try to validate these as well.
+                        // If we get here then the get method expects parameters,
+                        //   which we aren't setup to deal with.
                         continue;
                     }
 
@@ -113,19 +115,47 @@ public static class ValidatorEx
                     // Watch for nulls!
                     if (propValue is not null) 
                     {
-                        // Setup for the next validation.
-                        var tempValidationContext = new ValidationContext(propValue);
-                        var tempValidationResults = new List<ValidationResult>();
+                        // Is the return type a sequence?
+                        if (null != getGetMethod.ReturnType.GetInterface(
+                            nameof(System.Collections.IEnumerable)
+                            ))
+                        {
+                            // Loop and validate each sub-object.
+                            foreach (var obj in ((propValue as System.Collections.IEnumerable) ?? 
+                                Array.Empty<object>()))
+                            {
+                                // Setup for the next validation.
+                                var tempValidationContext = new ValidationContext(
+                                    obj
+                                    );
 
-                        // Validate the object.
-                        result = ValidatorEx.TryValidateObject(
-                            propValue,
-                            tempValidationContext,
-                            tempValidationResults,
-                            validateAllProperties,
-                            recursive
-                            );
-
+                                // Validate the object.
+                                result &= ValidatorEx.TryValidateObject(
+                                    obj,
+                                    tempValidationContext,
+                                    tempValidationResults,
+                                    validateAllProperties,
+                                    recursive
+                                    );
+                            }
+                        }
+                        else
+                        {
+                            // Setup for the next validation.
+                            var tempValidationContext = new ValidationContext(
+                                propValue
+                                );
+                            
+                            // Validate the object.
+                            result = ValidatorEx.TryValidateObject(
+                                propValue,
+                                tempValidationContext,
+                                tempValidationResults,
+                                validateAllProperties,
+                                recursive
+                                );
+                        }
+                        
                         // Did we fail?
                         if (!result)
                         {

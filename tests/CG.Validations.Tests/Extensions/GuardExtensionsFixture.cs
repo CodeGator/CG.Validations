@@ -1,4 +1,7 @@
 ﻿
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
 namespace CG.Validations
 {
     /// <summary>
@@ -10,10 +13,70 @@ namespace CG.Validations
     public class GuardExtensionsFixture
     {
         // *******************************************************************
+        // Types.
+        // *******************************************************************
+
+        #region Types
+
+        /// <summary>
+        /// This class is for internal testing purposes
+        /// </summary>
+        class X
+        {
+            /// <summary>
+            /// This property is for internal testing purposes
+            /// </summary>
+            public List<Y> ListY { get; set; } = new();
+        }
+
+        /// <summary>
+        /// This class is for internal testing purposes
+        /// </summary>
+        class Y
+        {
+            /// <summary>
+            /// This property is for internal testing purposes
+            /// </summary>
+            [Required]
+            public string A { get; set; } = null!;
+        }
+
+        #endregion
+
+        // *******************************************************************
         // Public methods.
         // *******************************************************************
 
         #region Public methods
+
+        /// <summary>
+        /// This method is a unit test that verifies the <see cref="GuardExtensions.ThrowIfInvalidObject(IGuard, object, string, string, string, int)"/> 
+        /// method. Here we verify that the method throws an exception when a 
+        /// sub object has a decorated property with an invalid value.
+        /// </summary>
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void GuardExtensions_ThrowIfInvalidObject_ThrowFromInvalidSubOject()
+        {
+            var obj = new X();
+            obj.ListY.Add(new Y());
+            Guard.Instance().ThrowIfInvalidObject(obj, "value");
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method is a unit test that verifies the <see cref="GuardExtensions.ThrowIfInvalidObject(IGuard, object, string, string, string, int)"/> 
+        /// method. Here we verify that the method does not throw an exception 
+        /// if the input doesn't have any decorated properties to validate.
+        /// </summary>
+        [TestMethod]
+        public void GuardExtensions_ThrowIfInvalidObject_NoThrow()
+        {
+            Guard.Instance().ThrowIfInvalidObject(new object(), "value");
+        }
+
+        // *******************************************************************
 
         /// <summary>
         /// This method is a unit test that verifies the <see cref="GuardExtensions.ThrowIfNullOrEmpty(IGuard, string, string, string, string, int)"/> 
